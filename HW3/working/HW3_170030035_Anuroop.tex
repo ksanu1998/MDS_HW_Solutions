@@ -75,7 +75,11 @@ Plot a 3D graph and a contour map of $f(x,y)=x^2-y^2\ \forall\ x,y\in[-5,5]$
 \end{figure}
 \clearpage
 \section{Question 2}
+<<<<<<< HEAD
 Randomly generate a set of $24$ points that belong to the set $\{(x,y):x,y\in[-5,5]$. Create a scatter plot and outline the convex hull of the set you just created.
+=======
+Randomly generate a set of $24$ points that belong to the set $\{(x,y):x,y\in[-5,5]$. Create a scatter plot and outline the convex hull of the set you just created. External libraries are allowed to be used.
+>>>>>>> 908308211605406d103572e4f5c1e1617fa8677d
 \begin{figure}[htp]
         \centering
         \includegraphics[width=9cm]{conv_hull.png}\\
@@ -84,8 +88,13 @@ Randomly generate a set of $24$ points that belong to the set $\{(x,y):x,y\in[-5
 \section{Question 3}
 Check if the function $f(x)=x^{T}Ax$ for $A\in R^{2\times2}$ where all components of $x$ are integers in $[-10,10]$, is convex. Find $11$ counter examples if it is not.\\~\\
 
+<<<<<<< HEAD
 I take a random vector $x$ where $x_{ij}\in[-10,10]$ for $i,j=\{1,2\}$. I then rotate and scale it using the matrix $A:=\Big(\begin{matrix}\cos\theta & \sin\theta \\ \sin\theta & \cos\theta\end{matrix}\Big)$. Here $f(x)=x^{T}Ax=(x^{2}+y^{2})\cos\theta+2xy\sin\theta$. There is a result which states that $f(x)=x^{T}Ax$ is convex if and only if $A$ is positive semidefinite. By the way I defined the matrix $A$, it is symmetric. However, it can be analysed that for some values of $\theta$, $f$ takes negative values. So I provide $11$ such values of $A$ for which $f$ is not convex. For better visualisation, I plotted the rotated and scaled vector $Ax$ for some values of $A$. I also plot the corresponding surfaces of $f$.\\
 Here are the counter-examples in terms of the matrix $A$:\\
+=======
+I take a random vector $x$ where $x_{ij}\in[-10,10]$ for $i,j=\{1,2\}$. I then rotate and scale it using the matrix $A:=\Big(\begin{matrix}\cos\theta & \sin\theta \\ \sin\theta & \cos\theta\end{matrix}\Big)$. Then $f(x)=x^{T}Ax=(x^{2}+y^{2})\cos\theta+2xy\sin\theta$ gives the dot product of the new vector with the original vector. There is a result which states that $f(x)=x^{T}Ax$ is convex if and only if $A$ is positive semidefinite. By the way I defined the matrix $A$, it is symmetric. However, it can be analysed that for some values of $\theta$, $f$ takes negative values. So I provide $11$ such values of $A$ for which $f$ is not convex. For better visualisation, I plot the rotated and scaled vector for every value of $A$. Also, I plot the corresponding surfaces of $f$.\\
+Here are the counter-examples in terms of matrix $A$:\\
+>>>>>>> 908308211605406d103572e4f5c1e1617fa8677d
 $\Big(\begin{matrix}0.27 & 0.96 \\ 0.96 & 0.27\end{matrix}\Big)$
 $\Big(\begin{matrix}0.17 & 0.99 \\ 0.99 & 0.17\end{matrix}\Big)$
 $\Big(\begin{matrix}0.07 & 1.0 \\ 1.0 & 0.07\end{matrix}\Big)$
@@ -97,11 +106,19 @@ $\Big(\begin{matrix}-0.42 & 0.91 \\ 0.91 & -0.42\end{matrix}\Big)$
 $\Big(\begin{matrix}-0.5 & 0.86 \\ 0.86 & -0.5\end{matrix}\Big)$
 $\Big(\begin{matrix}-0.59 & 0.81 \\ -0.59 & 0.81\end{matrix}\Big)$
 $\Big(\begin{matrix}-0.67 & 0.75 \\ 0.75 & -0.67\end{matrix}\Big)$\\
+<<<<<<< HEAD
 Clearly as seen in the below plots, $f$ loses its convexity as we vary the value of $\theta$ from $0$ to $\pi$.\\
 \begin{figure}[htp]
         \centering
         \includegraphics[width=9cm]{psd.png}\\
         \caption{Rotated and scaled vectors $Ax$ for different matrices $A$}
+=======
+Clearly as seen in the below plots, $f$ loses its convexity as we vary the vlaue of $\theta$ from $0$ to $\pi$.\\
+\begin{figure}[htp]
+        \centering
+        \includegraphics[width=9cm]{psd.png}\\
+        \caption{Rotated and scaled vectors ($Ax$) for different matrices $A$}
+>>>>>>> 908308211605406d103572e4f5c1e1617fa8677d
 \end{figure}
 \begin{figure}[htp]
         \centering
@@ -123,10 +140,16 @@ Clearly as seen in the below plots, $f$ loses its convexity as we vary the value
         \includegraphics[width=9cm]{73pi.png}\\
         \caption{Surface of $f$ for $\theta=0.73\pi$}
 \end{figure}
+<<<<<<< HEAD
 \clearpage
 \begin{figure}[htp]
         \centering
         \includegraphics[width=9cm]{qr-code.png}\\
+=======
+\begin{figure}[htp]
+        \centering
+        \includegraphics[width=9cm]{73pi.png}\\
+>>>>>>> 908308211605406d103572e4f5c1e1617fa8677d
         Scan this QR code to access the GitHub repository of my homweork solutions at \href{https://github.com/ksanu1998/MDS_HW_Solutions}{https://github.com/ksanu1998/MDS\_HW\_Solutions}
 \end{figure}
 \end{flushleft}
